@@ -1,0 +1,101 @@
+body {
+    background-color:cadetblue;
+}
+
+.container {
+    display: flex;
+}
+
+.placar {
+    font-size: 15px;
+    margin-left: 20px;
+    width: 150px;
+    height: 180px;
+    border:solid 3px;
+    text-align: center;
+    background-color: white;
+
+}
+
+#score1 {
+    font-size: 60px;
+    color: blue;
+    text-align: center;
+
+}
+
+
+
+#score2 {
+    font-size: 60px;
+    color: red;
+    text-align: center;
+}
+
+
+#jogo{
+    width:603px;
+    height:600px;
+    border:solid 3px;
+    background-color: white;
+}
+ 
+.linha{
+    height:200px;
+    border-bottom:solid 1px;
+}
+ 
+.casa{
+    width:200px;
+    height:100%;
+    border-right:solid 1px;
+    float:left;
+    transition: 0.3s;
+}
+
+.casa:hover {
+    background-color: rgb(168, 167, 167);
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+#button1{
+    margin-left: 25px;
+}
+
+#button2{
+    margin-left: 20px;
+}
+
+#jogadoratual {
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+    border:solid 3px;
+    text-align: center;
+    background-color: white;
+}

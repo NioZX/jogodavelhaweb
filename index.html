@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+   
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div id="jogo">
+            <div class="linha">
+                <canvas width="200" height="200" class="casa" id="casa1" onclick='clickCasa(1);'></canvas>
+                <canvas width="200" height="200" class="casa" id="casa2" onclick='clickCasa(2);'></canvas>
+                <canvas width="200" height="200" class="casa" id="casa3" onclick='clickCasa(3);'></canvas>
+            </div>
+            <div class="linha">
+                <canvas width="200" height="200" class="casa" id="casa4" onclick='clickCasa(4);'></canvas>
+                <canvas width="200" height="200" class="casa" id="casa5" onclick='clickCasa(5);'></canvas>
+                <canvas width="200" height="200" class="casa" id="casa6" onclick='clickCasa(6);'></canvas>
+            </div>
+            <div class="linha">
+                <canvas width="200" height="200" class="casa" id="casa7" onclick='clickCasa(7);'></canvas>
+                <canvas width="200" height="200" class="casa" id="casa8" onclick='clickCasa(8);'></canvas>
+                <canvas width="200" height="200" class="casa" id="casa9" onclick='clickCasa(9);'></canvas>
+            </div>
+            <div class="container">
+                <div id="jogadoratual">
+                    <h1 style="font-size: 30px;">Jogador atual: </h1>
+                    <canvas class="show" width="200" height="200"  id="casa10"></canvas>
+                </div>
+
+                <div>
+                    <button class="button" id="button1" onclick='resetGame();'>Reniciar jogo</button>
+                    <button class="button" id="button2" onclick='resetPlacar();'>Resetar placar</button>
+                </div>
+            </div>
+        </div>
+        <div class="placar">
+            <h1 id="player1">Player 1</h1>
+            <h1 id="score1">0</h1>
+        </div>
+
+        <div class="placar">
+            <h1 id="player2">Player 2</h1>
+            <h1 id="score2">0</h1>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
